@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sławomir Majcher | Architekt Systemu</title>
+    <meta name="description" content="Portfolio: VectorLegis, Python, Linux, AI.">
+    
+    <style>
+
+            /* ======================================= */
+            /* ESTETYKA OGÓLNA I FONDAMENTY (KROK 1) */
+            /* ======================================= */
+
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono&display=swap');
+
+            body {
+                /* Kolorystyka Dark Mode */
+                background-color: #1c1c1c; 
+                color: #E0E0E0; /* Jasny tekst */
+                
+                /* Typografia */
+                font-family: 'Roboto', 'Arial', sans-serif; /* Główny font, odpowiednik Verdana/Arial */
+                font-size: 16px; /* Baza dla rem/em */
+                line-height: 1.6; /* Lepsza czytelność */
+                padding: 1rem;
+            }
+
+            /* ======================================= */
+            /* KONTENER GŁÓWNY (KROK 5) */
+            /* ======================================= */
+
+            .container {
+                max-width: 800px; /* Wąski układ gazetowy */
+                width: 100%; 
+                margin-left: 1rem; /* Margines od lewej krawędzi */
+                margin-right: auto; /* Wyrównanie do lewej */
+                padding: 0; 
+            }
+
+            /* ======================================= */
+            /* NAGŁÓWKI (KROK 2) */
+            /* ======================================= */
+
+            h1, h2, h3 {
+                font-family: 'Arial', sans-serif; /* Systemowy akcent */
+                font-weight: 700;
+                color: #E0E0E0;
+            }
+
+            h1 {
+                font-size: 3.05em; /* ~48.8px (Fibonacci 5) */
+                margin-top: 0;
+            }
+
+            h2 {
+                font-size: 2.02em; /* ~32.3px (Fibonacci 3) */
+                border-bottom: 2px solid #555; /* Dyskretna linia oddzielająca sekcje */
+                padding-bottom: 0.5rem;
+                margin-top: 2rem;
+            }
+
+            h3 {
+                font-size: 1.62em; /* ~25.9px (Fibonacci 2) */
+            }
+
+            /* ======================================= */
+            /* KOD (KROK 3 & 4) */
+            /* ======================================= */
+
+            /* Krok 3: Bloki Kodu <pre> */
+            pre {
+                font-family: 'Roboto Mono', 'Courier New', monospace;
+                font-size: 0.9em; 
+                line-height: 1.4; 
+                background-color: #282c34; /* Ciemne tło terminala */
+                color: #abb2bf; /* Jasna czcionka */
+                padding: 1.5rem;
+                margin: 1.5rem 0;
+                border-radius: 4px;
+                overflow-x: auto; 
+                white-space: pre-wrap; 
+            }
+
+            /* Krok 4: Kod Inline <code> */
+            code {
+                font-family: 'Roboto Mono', 'Courier New', monospace;
+                font-size: 0.95em; 
+                color: #00ff00; /* Klasyczna, jaskrawa terminalowa zieleń */
+                background-color: #1a1a1a; 
+                padding: 0.2em 0.4em; 
+                border-radius: 3px;
+                white-space: nowrap; 
+            }
+
+            /* ======================================= */
+            /* LISTY, STOPKA, LINKI (KROK 6, 7, 8) */
+            /* ======================================= */
+
+            /* Krok 6: Listy */
+            ul {
+                list-style: square; /* Wypełniony kwadrat */
+                padding-left: 1.5rem; 
+                margin-bottom: 1.5rem;
+            }
+
+            ol {
+                list-style-type: decimal; 
+                padding-left: 1.5rem; 
+                margin-bottom: 1.5rem;
+            }
+
+            li {
+                margin-bottom: 0.5rem; 
+            }
+
+            /* Krok 7: Stopka */
+            footer {
+                margin-top: 3rem; 
+                border-top: 1px solid #444; 
+                padding-top: 1.5rem;
+                font-size: 0.8em; 
+                text-align: center; 
+                color: #888; 
+            }
+
+            /* Krok 8: Linki */
+            a {
+                color: #007bff; /* Systemowy niebieski */
+                text-decoration: none; 
+                transition: color 0.2s; 
+            }
+
+            a:hover {
+                color: #4da6ff; 
+                text-decoration: underline; 
+            }
+
+            /* Estetyka ogólna (Dopełnienie) */
+            header { 
+                padding-bottom: 2rem; 
+                border-bottom: 1px solid #555; 
+            }
+    </style>
+</head>
+<body>
+    <main class="container">
+        
+        <header>
+            <h1>Sławomir Majcher</h1>
+            <p>
+                <strong>Architekt Systemu & Weryfikator</strong><br>
+                Specjalizacja: Python, Linux, RAG, Neurosymbolic AI.
+            </p>
+            <nav>
+                <ul>
+                    <li><a href="#projekty">Projekty</a></li>
+                    <li><a href="#blog">Notatki</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="projekty">
+            <h2>Wybrane Projekty</h2>
+
+            <article class="project-card">
+                <header><strong>VectorLegis (dawniej "Prawo i Spacja")</strong></header>
+                <p>
+                    Autonomiczny system RAG do analizy polskiego prawa. 
+                    Architektura oparta na PostgreSQL (pgvector), przetwarzaniu wsadowym PDF 
+                    (Google Batch API) i hybrydowym wyszukiwaniu semantycznym.
+                </p>
+                <footer><small>Tagi: Python, RAG, AI, Docker, PostgreSQL</small></footer>
+            </article>
+
+            <article class="project-card">
+                <header><strong>Waga Wii (Linux Driver)</strong></header>
+                <p>
+                    Nowoczesny sterownik Python 3.12 dla Wii Balance Board na Linuxie.
+                    Rozwiązuje problemy z dependencjami Bluetooth na nowych jądrach.
+                </p>
+                <footer><small>Tagi: Hardware, Python, Linux, Bluetooth</small></footer>
+            </article>
+        </section>
+
+        <section id="blog">
+            <h2>Ostatnie Myśli</h2>
+            <ul>
+                <li>Dlaczego RAG jest filtrem uwagi, a nie pamięcią.</li>
+                <li>Neuroewolucja w architekturach Mixture of Experts.</li>
+                <li>Droga Rzemieślnika w erze korporacyjnego AI.</li>
+            </ul>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>
+                E-mail: 
+                slavek.1.majcher.2@gmail.com <br>
+                <small><em>(usuń cyfry z adresu)</em></small>
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Sławomir Majcher. Built with pure HTML & Pico.css.</p>
+        </footer>
+
+    </main>
+</body>
+</html>
